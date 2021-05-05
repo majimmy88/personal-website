@@ -2,9 +2,9 @@ const About = () => {
   return (
     <section>
       <header>
-        <h1 class="text-2xl text-gray-500 mb-3">About Me</h1>
+        <h1 className="text-2xl text-gray-500 mb-3">About Me</h1>
       </header>
-      <p class="text-gray-400">
+      <p className="text-gray-400">
         San Francisco based Software Engineer with a background in Real Estate.
         Having grown up in the Bay Area, its been amazing and mesmerizing
         watching how much technology has shaped my environment. Having spent 5

@@ -5,30 +5,29 @@ import Google from '../assets/google-brands.svg';
 
 const Header = () => {
   return (
-    <header class="bg-fixed bg-hero-pattern bg-left-top h-full flex flex-col justify-center items-center lg:items-end lg:pb-28 lg:pr-10">
-      <div class="flex flex-col items-center mb-5 lg:items-end">
+    <header className="h-full flex flex-col justify-center items-center lg:h-screen lg:items-end lg:pb-28 lg:pr-10">
+      <div className="flex flex-col items-center mb-5 lg:items-end">
         <img
-          class="rounded-full h-28 w-28 mb-5"
+          className="rounded-full h-28 w-28 mb-5"
           src={profilePicture}
           alt="profile"
         />
-
-        <h1 class="text-white font-medium">Jimmy Ma</h1>
-        <h1 class="text-gray-300">Software Engineer</h1>
+        <h1 className="text-white font-medium">Jimmy Ma</h1>
+        <h1 className="text-gray-300">Software Engineer</h1>
       </div>
       <footer>
-        <div class="flex flex-row bg-gray-200 space-x-2 rounded-sm p-1">
-          <div class="h-5 w-5">
+        <div className="flex flex-row bg-gray-200 space-x-2 rounded-sm p-2">
+          <div className="h-5 w-5">
             <a href="https://www.linkedin.com/in/majimmy88/">
               <img src={LinkedIn} alt="LinkedIn" />
             </a>
           </div>
-          <div class="h-5 w-5">
+          <div className="h-5 w-5">
             <a href="https://github.com/majimmy88">
               <img src={Github} alt="Github" />
             </a>
           </div>
-          <div class="h-5 w-5">
+          <div className="h-5 w-5">
             <a href="mailto:majimmy88@gmail.com">
               <img src={Google} alt="Gmail" />
             </a>
