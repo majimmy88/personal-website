@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Onboarding from '../assets/onboarding-clip.gif';
 import MusicPlayer from '../assets/music-player-clip.gif';
+import ProfilePage from '../assets/profile-page-clip.gif';
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa';
 
 const projects = [
@@ -15,17 +16,15 @@ const projects = [
     on our site.`,
   },
   {
+    name: 'Profile Pages (Mobile-First Responsive Design) - Logos News',
+    image: ProfilePage,
+    imageAlt: 'Profile Page Clip',
+    description: `According to a recent report, nearly three quarters of the world will use just their smartphones to access the internet by 2025. I led the initiative to refresh our user profile pages with mobile-first design to improve load speeds on mobile devices.`,
+  },
+  {
     name: 'Music Player',
     image: MusicPlayer,
     imageAlt: 'Music Player Clip',
-    description: `Music player with features such as now playing, queue, top 10,
-    search, and browse. Application optimized with caching and
-    server-side HTTP requests.`,
-  },
-  {
-    name: 'Rental Reviews Microservice',
-    image: Onboarding,
-    imageAlt: 'Rental Reviews Screenshot',
     description: `Music player with features such as now playing, queue, top 10,
     search, and browse. Application optimized with caching and
     server-side HTTP requests.`,
