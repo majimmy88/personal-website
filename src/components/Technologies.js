@@ -1,7 +1,3 @@
-// import logo_html5 from '../assets/logo_html5.svg';
-// import logo_css3 from '../assets/logo_css3.svg';
-// import logo_react from '../assets/logo_react.svg';
-
 const Technologies = () => {
   return (
     <section>
