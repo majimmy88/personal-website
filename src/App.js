@@ -3,7 +3,6 @@ import Header from './components/Header';
 import About from './components/About';
 import Technologies from './components/Technologies';
 import Work from './components/Work';
-import Contact from './components/Contact';
 import Footer from './components/Footer';
 
 const App = () => {
@@ -18,8 +17,6 @@ const App = () => {
         <Technologies />
         <hr className="my-8" />
         <Work />
-        <hr className="my-8" />
-        <Contact />
         <hr className="my-8" />
         <Footer />
       </div>
