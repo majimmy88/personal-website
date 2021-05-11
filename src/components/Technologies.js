@@ -4,7 +4,7 @@ const Technologies = () => {
       <header>
         <h1 className="text-2xl text-gray-500 mb-3">Technologies</h1>
       </header>
-      <div className="text-gray-400 flex flex-row space-x-10 overflow-x-scroll">
+      <div className="text-gray-400 flex flex-row space-x-8">
         <div className="w-96 space-y-4">
           <h1>Frontend:</h1>
           <ul className="space-y-4 text-7xl">
