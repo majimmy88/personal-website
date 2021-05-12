@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Onboarding from '../assets/onboarding-clip.gif';
 import MusicPlayer from '../assets/music-player-clip.gif';
 import ProfilePage from '../assets/profile-page-clip.gif';
+import Reviews from '../assets/reviews-clip.gif';
 import { HiArrowNarrowLeft, HiArrowNarrowRight } from 'react-icons/hi';
 
 const projects = [
@@ -13,13 +14,13 @@ const projects = [
     had significantly more readership. This new user onboarding flow was
     created for writers to fill in a complete profile including a bio,
     their credentionals, and a profile picture as soon as they register
-    on our site.`,
+    on our site. Built on Angular, Firebase`,
   },
   {
     name: 'Profile Pages (Mobile-First Responsive Design) - Logos News',
     image: ProfilePage,
     imageAlt: 'Profile Page Clip',
-    description: `According to a recent report, nearly three quarters of the world will use just their smartphones to access the internet by 2025. I led the initiative to refresh our user profile pages with mobile-first design to improve load speeds on mobile devices.`,
+    description: `According to a recent report, nearly three quarters of the world will use just their smartphones to access the internet by 2025. I led the initiative to refresh our user profile pages with mobile-first design to improve load speeds on mobile devices. Built on Angular, Firebase`,
   },
   {
     name: 'Music Player',
@@ -27,7 +28,13 @@ const projects = [
     imageAlt: 'Music Player Clip',
     description: `Music player with features such as now playing, queue, top 10,
     search, and browse. Application optimized with caching and
-    server-side HTTP requests.`,
+    server-side HTTP requests. Built on Vue, Express`,
+  },
+  {
+    name: 'Rental Reviews',
+    image: Reviews,
+    imageAlt: 'Reviews Clip',
+    description: `Microservice built for hotel or rental websites such as Kayak or Airbnb. Features ratings for different catagories, average rating for all catagories, keyword search, and pagination. Built on React, Express, Node, MongoDB`,
   },
 ];
 
