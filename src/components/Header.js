@@ -1,7 +1,7 @@
 import profilePicture from '../assets/profilePicture.jpeg';
 import LinkedIn from '../assets/linkedin-in-brands.svg';
 import Github from '../assets/github-brands.svg';
-import Google from '../assets/google-brands.svg';
+import Email from '../assets/email.svg';
 
 const Header = () => {
   return (
@@ -29,7 +29,7 @@ const Header = () => {
           </div>
           <div className="h-5 w-5">
             <a href="mailto:majimmy88@gmail.com">
-              <img src={Google} alt="Gmail" />
+              <img src={Email} alt="Email" />
             </a>
           </div>
         </div>
