@@ -70,14 +70,6 @@ const Work = () => {
         </div>
       </header>
       <div className="text-gray-400 relative h-full">
-        {/* <HiArrowNarrowLeft
-          className="text-5xl absolute top-1/2 left-0 z-10 opacity-20 hover:opacity-100"
-          onClick={prevSlide}
-        />
-        <HiArrowNarrowRight
-          className="text-5xl absolute top-1/2 right-0 z-10 opacity-20 hover:opacity-100"
-          onClick={nextSlide}
-        /> */}
         {projects.map((project, index) => {
           return (
             <div
