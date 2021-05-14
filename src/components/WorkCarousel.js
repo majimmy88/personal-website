@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import Onboarding from '../assets/onboarding-clip.gif';
 import MusicPlayer from '../assets/music-player-clip.gif';
 import ProfilePage from '../assets/profile-page-clip.gif';
@@ -15,6 +16,7 @@ const projects = [
     created for writers to fill in a complete profile including a bio,
     their credentionals, and a profile picture as soon as they register
     on our site. Built on Angular, Firebase`,
+    link: '/work/onboarding',
   },
   {
     name: 'Profile Pages (Mobile-First Responsive Design) - Logos News',
@@ -38,7 +40,7 @@ const projects = [
   },
 ];
 
-const Work = () => {
+const WorkCarousel = () => {
   const [current, setCurrent] = useState(0);
   const length = projects.length;
 
@@ -82,7 +84,12 @@ const Work = () => {
             >
               {index === current && (
                 <div>
-                  <h1 className="mb-2">{project.name}</h1>
+                  {project.link && (
+                    <h1 className="mb-2">
+                      <Link to={project.link}>{project.name}</Link>
+                    </h1>
+                  )}
+                  {!project.link && <h1 className="mb-2">{project.name}</h1>}
                   <div className="flex justify-center">
                     <img
                       src={project.image}
@@ -101,4 +108,4 @@ const Work = () => {
   );
 };
 
-export default Work;
+export default WorkCarousel;

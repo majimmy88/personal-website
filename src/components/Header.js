@@ -18,7 +18,7 @@ const Header = () => {
       document.documentElement.clientHeight;
 
     const scrolled = winScroll / height;
-    console.log(scrolled);
+    // console.log(scrolled);
     if (scrolled >= 0.02 && scrolled < 0.3) {
       setAbout(true);
       setTech(false);
