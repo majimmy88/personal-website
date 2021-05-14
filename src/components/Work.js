@@ -55,7 +55,7 @@ const Work = () => {
   }
 
   return (
-    <section className="h-96 mb-52">
+    <section id="work" className="h-96 mb-52">
       <header className="flex flex-row justify-between">
         <h1 className="text-2xl text-gray-500 mb-8">Work</h1>
         <div className="flex flex-row">

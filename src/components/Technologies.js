@@ -31,7 +31,7 @@ const Technologies = () => {
   // const [allOther, setOther] = useState(false);
 
   return (
-    <section>
+    <section id="technologies">
       <header>
         <h1 className="text-2xl text-gray-500 mb-3">Technologies</h1>
       </header>
