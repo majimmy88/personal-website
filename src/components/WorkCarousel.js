@@ -11,8 +11,8 @@ const projects = [
     name: 'New User Onboarding - Logos News',
     image: Onboarding,
     imageAlt: 'Onboarding Clip',
-    description: `Based on google analytics, our writers who had a complete profile
-    had significantly more readership. This new user onboarding flow was
+    description: `According to our analytics, Logos writers who had a completed profile
+    received significantly more readership. This new user onboarding flow was
     created for writers to fill in a complete profile including a bio,
     their credentionals, and a profile picture as soon as they register
     on our site. Built on Angular, Firebase`,
