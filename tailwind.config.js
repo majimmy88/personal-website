@@ -12,6 +12,13 @@ module.exports = {
       '3/4': '75%',
       full: '100%',
     },
+    minWidth: {
+      0: '0',
+      '1/4': '25%',
+      '1/2': '50%',
+      '3/4': '75%',
+      full: '100%',
+    },
     extend: {
       backgroundImage: (theme) => ({
         'hero-pattern':
@@ -21,7 +28,17 @@ module.exports = {
         'fade-in-left': {
           '0%': {
             opacity: '0',
-            transform: 'translateX(20px)',
+            transform: 'translateX(100px)',
+          },
+          '100%': {
+            opacity: '1',
+            transform: 'translateX(0)',
+          },
+        },
+        'fade-in-right': {
+          '0%': {
+            opacity: '0',
+            transform: 'translateX(-100px)',
           },
           '100%': {
             opacity: '1',
@@ -30,7 +47,8 @@ module.exports = {
         },
       },
       animation: {
-        'fade-in-left': 'fade-in-left 0.5s ease-out',
+        'fade-in-left': 'fade-in-left .75s ease-out',
+        'fade-in-right': 'fade-in-right .75s ease-out',
       },
     },
   },
