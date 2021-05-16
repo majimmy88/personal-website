@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { HashRouter, Route, Switch } from 'react-router-dom';
 import Home from './pages/Home';
 import Work from './pages/Work';
 import Onboarding from './pages/Onboarding';
@@ -7,19 +7,19 @@ import Onboarding from './pages/Onboarding';
 const App = () => {
   return (
     <div>
-      <BrowserRouter>
+      <HashRouter>
         <Switch>
           <Route exact path="/work/onboarding">
             <Onboarding />
           </Route>
-          <Route path="/work">
+          <Route exact path="/work">
             <Work />
           </Route>
-          <Route path="/">
+          <Route exact path="/">
             <Home />
           </Route>
         </Switch>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 };
