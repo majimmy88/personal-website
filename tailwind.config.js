@@ -28,7 +28,7 @@ module.exports = {
         'fade-in-left': {
           '0%': {
             opacity: '0',
-            transform: 'translateX(100px)',
+            transform: 'translateX(400px)',
           },
           '100%': {
             opacity: '1',
@@ -38,17 +38,37 @@ module.exports = {
         'fade-in-right': {
           '0%': {
             opacity: '0',
-            transform: 'translateX(-100px)',
+            transform: 'translateX(-400px)',
           },
           '100%': {
             opacity: '1',
             transform: 'translateX(0)',
           },
         },
+        'fade-out-left': {
+          from: {
+            opacity: '1',
+            transform: 'translateX(0px)',
+          },
+          to: {
+            opacity: '0',
+            transform: 'translateX(100px)',
+          },
+        },
+        'fade-out-right': {
+          from: {
+            opacity: '1',
+            transform: 'translateX(0px)',
+          },
+          to: {
+            opacity: '0',
+            transform: 'translateX(100px)',
+          },
+        },
       },
       animation: {
-        'fade-in-left': 'fade-in-left .75s ease-out',
-        'fade-in-right': 'fade-in-right .75s ease-out',
+        'fade-in-left': 'fade-in-left .5s ease-out',
+        'fade-in-right': 'fade-in-right .5s ease-out',
       },
     },
   },
