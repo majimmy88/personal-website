@@ -9,6 +9,13 @@ const Header = () => {
   const [tech, setTech] = useState(false);
   const [work, setWork] = useState(false);
 
+  useEffect(() => {
+    window.addEventListener('scroll', onScroll);
+    return () => {
+      window.removeEventListener('scroll', onScroll);
+    };
+  }, []);
+
   const onScroll = () => {
     const winScroll =
       document.body.scrollTop || document.documentElement.scrollTop;
@@ -33,13 +40,6 @@ const Header = () => {
       setWork(true);
     }
   };
-
-  useEffect(() => {
-    window.addEventListener('scroll', onScroll);
-    return () => {
-      window.removeEventListener('scroll', onScroll);
-    };
-  }, []);
 
   return (
     <header className="h-full flex flex-col justify-center items-center lg:h-screen lg:items-end lg:pb-28 lg:pr-20">
