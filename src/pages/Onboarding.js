@@ -1,39 +1,75 @@
+import React, { useState } from 'react';
 import NavBar from '../components/NavBar';
 import OnboardingVid from '../assets/onboarding-vid.mp4';
 import emptyProfile from '../assets/empty-profile.png';
+import OnboardingOne from '../assets/onboarding-slide-1.png';
+import OnboardingTwo from '../assets/onboarding-slide-2.png';
+import OnboardingThree from '../assets/onboarding-slide-3.png';
+import OnboardingFour from '../assets/onboarding-slide-4.png';
+import OnboardingFive from '../assets/onboarding-slide-5.png';
+import OnboardingSix from '../assets/onboarding-slide-6.png';
+import OnboardingSeven from '../assets/onboarding-slide-7.png';
+import { HiArrowNarrowLeft, HiArrowNarrowRight } from 'react-icons/hi';
+
+const slides = [
+  OnboardingOne,
+  OnboardingTwo,
+  OnboardingThree,
+  OnboardingFour,
+  OnboardingFive,
+  OnboardingSix,
+  OnboardingSeven,
+];
 
 const Onboarding = () => {
+  const [current, setCurrent] = useState(0);
+  const length = slides.length;
+
+  const nextSlide = () => {
+    setCurrent(current === length - 1 ? 0 : current + 1);
+  };
+
+  const prevSlide = () => {
+    setCurrent(current === 0 ? length - 1 : current - 1);
+  };
+
+  if (!Array.isArray(slides) || slides.length <= 0) {
+    return null;
+  }
   return (
     <div>
       <NavBar />
       <div className="pt-16 h-screen overflow-y-scroll">
-        <header className="relative flex items-center justify-start overflow-hidden w-screen h-96 max-h-1/2 lg:mb-14">
-          <div className="relative w-auto z-30 flex items-center justify-center text-white text-xl bg-blue-400 bg-opacity-90 rounded-r pl-16 p-5">
+        <header className="relative flex items-center justify-start overflow-hidden w-screen h-96  bg-gray-600 lg:h-screen lg:mb-52">
+          <div className="relative w-auto z-30 flex items-center justify-center text-white bg-blue-400 bg-opacity-90 rounded-r p-5 sm:pl-16 text-base sm:text-2xl lg:text-4xl lg:mt-96">
             User Onboarding - Logos News
           </div>
           <video
             autoPlay
             loop
             muted
-            className="absolute z-10 object-cover h-full w-full md:object-contain"
+            className="absolute z-10 object-cover h-full w-full opacity-80"
           >
             <source src={OnboardingVid} type="video/mp4" />
           </video>
         </header>
 
-        <div className="flex flex-col lg:flex-row lg:mb-10">
-          <div className="w-screen h-96 flex flex-col items-center justify-center bg-grey-100 p-5 lg:max-w-md lg:animate-fade-in-right">
-            <h1 className="text-gray-400 text-xl">Objective</h1>
-            <p className="text-gray-400">
+        <div className="flex flex-col lg:flex-row lg:mb-52">
+          <div className="w-screen h-96 flex flex-col items-center justify-center bg-grey-100 p-6 lg:h-screen lg:p-16 lg:max-w-xl lg:animate-fade-in-right">
+            <h1 className="text-gray-400 text-xl w-full">Objective</h1>
+            <div className="border-b-4 border-gray-200 w-20 mb-10 self-start"></div>
+            <p className="text-gray-400 text-sm lg:text-base">
               At Logos, we discovered from our analytics that writers who had
               completed their profiles received significantly more views on
-              their articles. Additionally, we were motivated to use methods
-              other then sending our users reminders to update their profile.
+              their articles. We were motivated to use methods other then
+              sending our users reminders to update their profile. We wanted a
+              proactive method to encourage users to fill their profiles prior
+              to using all the features on our site.
             </p>
           </div>
-          <div className="w-screen h-96 flex items-center justify-center bg-blue-200 lg:min-w-1/3 lg:animate-fade-in-left">
+          <div className="w-screen h-96 flex items-center justify-center bg-blue-200 lg:h-screen lg:min-w-1/3 lg:animate-fade-in-left">
             <img
-              className="rounded w-44"
+              className="rounded w-44 lg:w-60"
               src={emptyProfile}
               alt="Empty Profile"
             />
@@ -41,29 +77,63 @@ const Onboarding = () => {
         </div>
 
         <div className="flex flex-col lg:flex-row-reverse">
-          <div className="w-screen h-96 flex flex-col items-center justify-center bg-grey-100 p-5 lg:max-w-md lg:animate-fade-in-left">
-            <h1 className="text-gray-400 text-xl">Solution</h1>
-            <p className="text-gray-400">
-              We felt the best way to persuade our writers to fill complete
+          <div className="w-screen h-96 flex flex-col items-center justify-center bg-grey-100 p-6 my-6 lg:h-screen lg:my-0 lg:p-16 lg:max-w-xl lg:animate-fade-in-left">
+            <h1 className="text-gray-400 text-xl w-full">Solution</h1>
+            <div className="border-b-4 border-gray-200 w-20 mb-10 self-start"></div>
+            <p className="text-gray-400 text-sm lg:text-base">
+              We felt the best way to encourage our writers to fill complete
               profiles was by presenting them with a popup when they first sign
-              up. When the user's record is created, it will include a boolean
-              to check whether they have completed the onboarding flow yet. If
-              the user enters our site with the boolean set to false, our
-              onboarding pop-up will execute. When the user reaches the last
-              page of the onboarding flow, the boolean will switch to true and
-              the user will never be directed to the onboarding pop-up ever
-              again. Since completing the profile is not mandatory and only
-              strongly encourged, if the user skips through the entire
-              onboarding flow, it will also trigger the boolean to true and thus
-              never show again.
+              up. When the user's record is created at sign up, it will include
+              a record for onboarding. If our records indicate user hasn't been
+              onboarded, our onboarding pop-up will execute. When the user
+              reaches the last page of the onboarding flow, the record will
+              update and the user won't be directed to the onboarding pop-up
+              ever again. Since completing the profile is not mandatory and only
+              strongly encouraged, if the user skips through the entire
+              onboarding flow, it will also update the record and thus never
+              show again.
             </p>
           </div>
-          <div className="w-screen h-96 flex items-center justify-center bg-blue-200 lg:min-w-1/3 lg:animate-fade-in-right">
-            <img
-              className="rounded w-44"
-              src={emptyProfile}
-              alt="Empty Profile"
-            />
+          <div className="w-screen h-96 flex items-center justify-center bg-blue-200 lg:h-screen lg:min-w-1/3 lg:animate-fade-in-right">
+            <div className="flex flex-col items-center mt-8">
+              <div className="text-gray-400 h-48 mb-20 w-36 lg:w-60 lg:mb-64">
+                {slides.map((slide, index) => {
+                  return (
+                    <div
+                      className={
+                        index === current
+                          ? 'opacity-100 duration-1000'
+                          : 'opacity-0 duration-1000'
+                      }
+                      key={index}
+                    >
+                      {index === current && (
+                        <div>
+                          <img
+                            src={slide}
+                            alt="Onboarding Slides"
+                            className="rounded"
+                          />
+                        </div>
+                      )}
+                    </div>
+                  );
+                })}
+              </div>
+              <div className="flex flex-row justify-center">
+                <div className="flex flex-row items-center">
+                  <HiArrowNarrowLeft
+                    className="text-3xl z-10 opacity-20 hover:opacity-100"
+                    onClick={prevSlide}
+                  />
+                  <div className="mx-6 opacity-20">{current + 1}</div>
+                  <HiArrowNarrowRight
+                    className="text-3xl z-10 opacity-20 hover:opacity-100"
+                    onClick={nextSlide}
+                  />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
