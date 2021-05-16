@@ -28,7 +28,7 @@ const NavBar = () => {
       {!collapse && (
         <div className="fixed top-0 z-50 bg-white w-screen h-screen text-gray-400">
           <div className="flex flex-row border-b border-gray-400 pb-1">
-            <div className="font-sm text-lg my-4 text-center w-10/12 pl-8 md:w-11/12">
+            <div className="font-sm text-lg my-4 text-center w-10/12 sm:pl-8 md:w-11/12">
               Jimmy Ma - Software Engineer
             </div>
             <button
