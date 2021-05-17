@@ -43,9 +43,11 @@ const NavBar = () => {
               <li className="text-center mx-2 text-2xl py-5">
                 <Link to="/">Home</Link>
               </li>
-              <li className="text-center mx-2 text-2xl py-5">Work</li>
               <li className="text-center mx-2 text-2xl py-5">
-                Travels – Under Construction
+                <Link to="/work/onboarding"> User Onboarding</Link>
+              </li>
+              <li className="text-center mx-2 text-2xl py-5">
+                <Link to="/work/profiles"> Mobile First Profile Pages</Link>
               </li>
             </ul>
           </nav>
