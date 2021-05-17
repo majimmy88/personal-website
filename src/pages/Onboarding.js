@@ -117,7 +117,7 @@ const Onboarding = () => {
 
         <div className="flex flex-col lg:flex-row-reverse">
           <div
-            className={`w-screen h-96 flex flex-col items-center justify-center p-6 my-6 lg:h-screen lg:my-0 lg:p-16 lg:max-w-xl ${
+            className={`w-screen h-96 flex flex-col items-center justify-center p-6 my-14 lg:h-screen lg:my-0 lg:p-16 lg:max-w-xl ${
               isSolution === true ? 'lg:animate-fade-in-left' : 'lg:opacity-0'
             }`}
           >
@@ -143,7 +143,7 @@ const Onboarding = () => {
             }`}
           >
             <div className="flex flex-col items-center mt-8">
-              <div className="text-gray-400 h-48 mb-20 w-36 lg:w-60 lg:mb-64">
+              <div className="text-gray-400">
                 {slides.map((slide, index) => {
                   return (
                     <div
@@ -155,7 +155,7 @@ const Onboarding = () => {
                       key={index}
                     >
                       {index === current && (
-                        <div>
+                        <div className="h-48 mb-20 w-36 lg:w-64 lg:mb-72">
                           <img src={slide} alt="Onboarding Slides" />
                         </div>
                       )}
@@ -164,7 +164,7 @@ const Onboarding = () => {
                 })}
               </div>
               <div className="flex flex-row justify-center">
-                <div className="flex flex-row items-center">
+                <div className="flex flex-row items-center pb-4">
                   <HiArrowNarrowLeft
                     className="text-3xl z-10 opacity-20 hover:opacity-100"
                     onClick={prevSlide}
