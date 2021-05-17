@@ -13,7 +13,7 @@ const NavBar = () => {
               <Link to="/">Jimmy Ma – Software Engineer </Link>
             </div>
             <button
-              className="p-2 w-2/12 md:w-1/12"
+              className="p-2 w-2/12 flex items-center justify-center md:w-1/12"
               onClick={() => setCollapse(false)}
             >
               <HiOutlineViewList
@@ -32,10 +32,10 @@ const NavBar = () => {
               <Link to="/">Jimmy Ma - Software Engineer </Link>
             </div>
             <button
-              className="text-xl w-2/12 md:w-1/12"
+              className="text-xl w-2/12 flex items-center justify-center md:w-1/12"
               onClick={() => setCollapse(true)}
             >
-              x
+              ×
             </button>
           </div>
           <nav className="flex justify-center ml-2">
