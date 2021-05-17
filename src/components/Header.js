@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { HashLink as Link } from 'react-router-hash-link';
 import profilePicture from '../assets/profilePicture.jpeg';
 import LinkedIn from '../assets/linkedin-in-brands.svg';
 import Github from '../assets/github-brands.svg';
@@ -54,7 +55,7 @@ const Header = () => {
         <ul className="text-gray-200 hidden lg:block lg:flex lg:flex-col lg:items-end lg:my-6">
           <li>
             <div>
-              <a href="#about">
+              <Link to="/#about">
                 <div className="flex flex-row">
                   <span
                     className={`${
@@ -66,13 +67,13 @@ const Header = () => {
                     About Me
                   </span>
                 </div>
-              </a>
+              </Link>
             </div>
           </li>
 
           <li>
             <div>
-              <a href="#technologies">
+              <Link to="/#technologies">
                 <div className="flex flex-row">
                   <span
                     className={`${
@@ -84,13 +85,13 @@ const Header = () => {
                     Technologies
                   </span>
                 </div>
-              </a>
+              </Link>
             </div>
           </li>
 
           <li>
             <div>
-              <a href="#work">
+              <Link to="/#work">
                 <div className="flex flex-row">
                   <span
                     className={`${
@@ -102,7 +103,7 @@ const Header = () => {
                     Work
                   </span>
                 </div>
-              </a>
+              </Link>
             </div>
           </li>
         </ul>
