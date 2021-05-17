@@ -8,7 +8,7 @@ import { HiArrowNarrowLeft, HiArrowNarrowRight } from 'react-icons/hi';
 
 const projects = [
   {
-    name: 'New User Onboarding - Logos News',
+    name: 'New User Onboarding – Logos News',
     image: Onboarding,
     imageAlt: 'Onboarding Clip',
     description: `According to our analytics, Logos writers who had a completed profile
@@ -19,7 +19,7 @@ const projects = [
     link: '/work/onboarding',
   },
   {
-    name: 'Mobile First Profile Pages - Logos News',
+    name: 'Mobile First Profile Pages – Logos News',
     image: ProfilePage,
     imageAlt: 'Profile Page Clip',
     description: `According to a recent report, nearly three quarters of the world will use just their smartphones to access the internet by 2025. I led the initiative to refresh our user profile pages with mobile-first design to improve load speeds on mobile devices. Built on Angular and Firebase.`,
@@ -87,7 +87,10 @@ const WorkCarousel = () => {
                 <div>
                   {project.link && (
                     <h1 className="mb-8">
-                      <Link to={project.link} className="hover:text-black">
+                      <Link
+                        to={project.link}
+                        className="hover:text-black hover:underline"
+                      >
                         {project.name}
                       </Link>
                     </h1>
@@ -105,7 +108,10 @@ const WorkCarousel = () => {
                   <p>
                     {project.description}
                     {
-                      <Link to={project.link} className="ml-3 hover:text-black">
+                      <Link
+                        to={project.link}
+                        className="ml-3 hover:text-black hover:underline"
+                      >
                         Learn More
                       </Link>
                     }

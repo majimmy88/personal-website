@@ -66,7 +66,7 @@ const Profiles = () => {
       <div className="pt-16 h-screen">
         <header className="relative flex items-center justify-start overflow-hidden w-screen h-96  bg-gray-900 lg:h-screen lg:mb-52">
           <div className="relative w-auto z-30 flex items-center justify-center text-white bg-green-400 bg-opacity-90 rounded-r p-5 sm:pl-16 text-base sm:text-2xl lg:text-4xl lg:mt-96">
-            Mobile First Profile Pages - Logos News
+            Mobile First Profile Pages – Logos News
           </div>
           <video
             autoPlay
