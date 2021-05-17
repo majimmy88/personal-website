@@ -99,7 +99,7 @@ const Profiles = () => {
             }`}
           >
             <img
-              className="max-w-xs px-4 sm:px-6 sm:max-w-sm lg:max-w-lg"
+              className="max-w-xs px-4 sm:px-6 sm:max-w-sm lg:max-w-2xl"
               src={OldProfiles}
               alt="Old Profiles"
             />
@@ -126,7 +126,7 @@ const Profiles = () => {
             </p>
           </div>
           <div
-            className={`w-screen h-96 flex items-center justify-center bg-green-200 lg:h-screen lg:min-w-1/3 ${
+            className={`w-screen h-full flex items-center justify-center bg-green-200 lg:h-screen lg:min-w-1/3 ${
               isSolution === true ? 'lg:animate-fade-in-right' : 'lg:opacity-0'
             }`}
           >
@@ -148,7 +148,7 @@ const Profiles = () => {
                             autoPlay
                             loop
                             muted
-                            className="max-h-60 p-4 sm:max-h-72 sm:px-6 lg:max-h-96"
+                            className="h-screen/3 p-4 sm:px-6 lg:h-screen/2"
                           >
                             <source src={slide.video} type="video/mp4" />
                           </video>
@@ -159,7 +159,7 @@ const Profiles = () => {
                 })}
               </div>
               <div className="flex flex-row justify-center">
-                <div className="flex flex-row items-center">
+                <div className="flex flex-row items-center pb-4">
                   <HiArrowNarrowLeft
                     className="text-3xl z-10 opacity-20 hover:opacity-100"
                     onClick={prevSlide}
