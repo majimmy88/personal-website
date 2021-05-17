@@ -67,8 +67,8 @@ module.exports = {
         },
       },
       animation: {
-        'fade-in-left': 'fade-in-left .5s ease-out',
-        'fade-in-right': 'fade-in-right .5s ease-out',
+        'fade-in-left': 'fade-in-left .75s ease-out',
+        'fade-in-right': 'fade-in-right .75s ease-out',
       },
     },
   },
