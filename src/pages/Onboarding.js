@@ -27,6 +27,7 @@ const Onboarding = () => {
   const [isSolution, setIsSolution] = useState(false);
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     window.addEventListener('scroll', onScroll);
     return () => {
       window.removeEventListener('scroll', onScroll);
@@ -71,7 +72,7 @@ const Onboarding = () => {
     <div>
       <NavBar />
       <div className="pt-16 h-screen">
-        <header className="relative flex items-center justify-start overflow-hidden w-screen h-96  bg-gray-600 lg:h-screen lg:mb-52">
+        <header className="relative flex items-center justify-start overflow-hidden w-screen h-96  bg-gray-700 lg:h-screen lg:mb-52">
           <div className="relative w-auto z-30 flex items-center justify-center text-white bg-blue-400 bg-opacity-90 rounded-r p-5 sm:pl-16 text-base sm:text-2xl lg:text-4xl lg:mt-96">
             User Onboarding - Logos News
           </div>
@@ -79,7 +80,7 @@ const Onboarding = () => {
             autoPlay
             loop
             muted
-            className="absolute z-10 object-cover h-full w-full opacity-80"
+            className="absolute z-10 object-cover h-full w-full opacity-75"
           >
             <source src={OnboardingVid} type="video/mp4" />
           </video>
