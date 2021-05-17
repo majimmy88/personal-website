@@ -105,7 +105,7 @@ const WorkCarousel = () => {
                       />
                     </Link>
                   </div>
-                  <p>
+                  <p className="text-sm">
                     {project.description}
                     {
                       <Link
