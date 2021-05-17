@@ -44,8 +44,9 @@ const NavBar = () => {
                 <Link to="/">Home</Link>
               </li>
               <li className="text-center mx-2 text-2xl py-5">Work</li>
-              <li className="text-center mx-2 text-2xl py-5">Travels</li>
-              <li className="text-center mx-2 text-2xl py-5">Contact</li>
+              <li className="text-center mx-2 text-2xl py-5">
+                Travels - Under Construction
+              </li>
             </ul>
           </nav>
         </div>
