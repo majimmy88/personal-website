@@ -1,7 +1,7 @@
 import './App.css';
 import { HashRouter, Route, Switch } from 'react-router-dom';
 import Home from './pages/Home';
-import Work from './pages/Work';
+// import Work from './pages/Work';
 import Onboarding from './pages/Onboarding';
 
 const App = () => {
@@ -11,9 +11,6 @@ const App = () => {
         <Switch>
           <Route exact path="/work/onboarding">
             <Onboarding />
-          </Route>
-          <Route exact path="/work">
-            <Work />
           </Route>
           <Route exact path="/">
             <Home />
