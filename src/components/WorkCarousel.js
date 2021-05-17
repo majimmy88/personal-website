@@ -86,7 +86,7 @@ const WorkCarousel = () => {
                 <div>
                   {project.link && (
                     <h1 className="mb-8">
-                      <Link to={project.link} className="hover:text-gray-300">
+                      <Link to={project.link} className="hover:text-black">
                         {project.name}
                       </Link>
                     </h1>
@@ -104,10 +104,7 @@ const WorkCarousel = () => {
                   <p>
                     {project.description}
                     {
-                      <Link
-                        to={project.link}
-                        className="ml-3 hover:text-gray-300"
-                      >
+                      <Link to={project.link} className="ml-3 hover:text-black">
                         Learn More
                       </Link>
                     }
