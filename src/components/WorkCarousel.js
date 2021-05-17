@@ -19,10 +19,11 @@ const projects = [
     link: '/work/onboarding',
   },
   {
-    name: 'Profile Pages (Mobile-First Responsive Design) - Logos News',
+    name: 'Mobile First Profile Pages - Logos News',
     image: ProfilePage,
     imageAlt: 'Profile Page Clip',
     description: `According to a recent report, nearly three quarters of the world will use just their smartphones to access the internet by 2025. I led the initiative to refresh our user profile pages with mobile-first design to improve load speeds on mobile devices. Built on Angular and Firebase.`,
+    link: '/work/profiles',
   },
   {
     name: 'Music Player',
