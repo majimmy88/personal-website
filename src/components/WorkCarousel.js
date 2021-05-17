@@ -101,7 +101,7 @@ const WorkCarousel = () => {
                       <img
                         src={project.image}
                         alt={project.imageAlt}
-                        className="w-auto h-auto mb-8 max-h-80"
+                        className="h-72 mb-8 lg:h-96"
                       />
                     </Link>
                   </div>
