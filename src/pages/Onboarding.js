@@ -108,7 +108,7 @@ const Onboarding = () => {
             }`}
           >
             <img
-              className="rounded w-44 lg:w-60"
+              className="w-44 lg:w-60"
               src={emptyProfile}
               alt="Empty Profile"
             />
@@ -156,11 +156,7 @@ const Onboarding = () => {
                     >
                       {index === current && (
                         <div>
-                          <img
-                            src={slide}
-                            alt="Onboarding Slides"
-                            className="rounded"
-                          />
+                          <img src={slide} alt="Onboarding Slides" />
                         </div>
                       )}
                     </div>
