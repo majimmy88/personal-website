@@ -3,6 +3,7 @@ import { HashRouter, Route, Switch } from 'react-router-dom';
 import Home from './pages/Home';
 // import Work from './pages/Work';
 import Onboarding from './pages/Onboarding';
+import Profiles from './pages/Profiles';
 
 const App = () => {
   return (
@@ -11,6 +12,9 @@ const App = () => {
         <Switch>
           <Route exact path="/work/onboarding">
             <Onboarding />
+          </Route>
+          <Route exact path="/work/profiles">
+            <Profiles />
           </Route>
           <Route exact path="/">
             <Home />
