@@ -57,7 +57,7 @@ const WorkCarousel = () => {
   }
 
   return (
-    <section id="work" className="h-96 mb-52">
+    <section id="work" className="h-96 mb-64">
       <header className="flex flex-row justify-between">
         <h1 className="text-2xl text-gray-500 mb-8">Work</h1>
         <div className="flex flex-row">
@@ -91,7 +91,7 @@ const WorkCarousel = () => {
                       </Link>
                     </h1>
                   )}
-                  {!project.link && <h1 className="mb-2">{project.name}</h1>}
+                  {!project.link && <h1 className="mb-8">{project.name}</h1>}
                   <div className="flex justify-center">
                     <Link to={project.link}>
                       <img
