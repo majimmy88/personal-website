@@ -92,7 +92,7 @@ const Onboarding = () => {
             }`}
           >
             <h1 className="text-gray-400 text-xl w-full">Objective</h1>
-            <div className="border-b-4 border-gray-200 w-20 mb-10 self-start"></div>
+            <div className="border-b-4 border-gray-200 w-16 mt-5 mb-10 self-start"></div>
             <p className="text-gray-400 text-sm lg:text-base">
               At Logos, we discovered from our analytics that writers who had
               completed their profiles received significantly more views on
@@ -122,7 +122,7 @@ const Onboarding = () => {
             }`}
           >
             <h1 className="text-gray-400 text-xl w-full">Solution</h1>
-            <div className="border-b-4 border-gray-200 w-20 mb-10 self-start"></div>
+            <div className="border-b-4 border-gray-200 w-16 mt-5 mb-10 self-start"></div>
             <p className="text-gray-400 text-sm lg:text-base">
               We felt the best way to encourage our writers to fill complete
               profiles was by presenting them with a popup when they first sign

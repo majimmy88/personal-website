@@ -84,7 +84,7 @@ const Profiles = () => {
             }`}
           >
             <h1 className="text-gray-400 text-xl w-full">Objective</h1>
-            <div className="border-b-4 border-gray-200 w-20 mb-10 self-start"></div>
+            <div className="border-b-4 border-gray-200 w-16 mt-5 mb-10 self-start"></div>
             <p className="text-gray-400 text-sm lg:text-base">
               According to mobile data research, nearly three quarters of the
               world will use just their smartphones to access the internet by
@@ -113,7 +113,7 @@ const Profiles = () => {
             }`}
           >
             <h1 className="text-gray-400 text-xl w-full">Solution</h1>
-            <div className="border-b-4 border-gray-200 w-20 mb-10 self-start"></div>
+            <div className="border-b-4 border-gray-200 w-16 mt-5 mb-10 self-start"></div>
             <p className="text-gray-400 text-sm lg:text-base">
               Starting with our profile pages, I led the initiative to build our
               components with mobile first design. Much of our existing code had
