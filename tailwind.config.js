@@ -19,7 +19,26 @@ module.exports = {
       '3/4': '75%',
       full: '100%',
     },
+    maxHeight: {
+      0: '0',
+      '1/4': '25%',
+      '1/2': '50%',
+      '3/4': '75%',
+      full: '100%',
+    },
     extend: {
+      height: (theme) => ({
+        'screen/2': '50vh',
+        'screen/3': 'calc(100vh / 3)',
+        'screen/4': 'calc(100vh / 4)',
+        'screen/5': 'calc(100vh / 5)',
+      }),
+      width: (theme) => ({
+        'screen/2': '50vw',
+        'screen/3': 'calc(100vw / 3)',
+        'screen/4': 'calc(100vw / 4)',
+        'screen/5': 'calc(100vw / 5)',
+      }),
       backgroundImage: (theme) => ({
         'hero-pattern':
           "url('https://images.unsplash.com/photo-1526838223946-b4db99314705?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1498&q=80')",
